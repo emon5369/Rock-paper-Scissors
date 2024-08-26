@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #18314F;
+    color: #8BBEB2;
+    padding: 15px;
+}
+
+.container {
+    display: inline-block;
+    background-color: #E6F9AF;
+    height: auto; 
+    width: 90%; 
+    max-width: 50rem; 
+    border: 2px dotted blue;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.choice {
+    height: 150px; 
+    width: 150px;
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+img:hover {
+    height: 135px;
+    border: 3px solid #384E77;
+    cursor: pointer;
+    animation: animation1 1s ease-in-out .1s infinite normal;
+}
+
+.score-card {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 50px; 
+    flex-wrap: wrap; 
+}
+
+#userPoint, #comPoint {
+    font-size: 2rem; 
+}
+
+.points {
+    height: 70px; 
+    width: 80px;
+    font-size: medium;
+    background-color: #0D0630;
+    color: white;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.points:hover {
+    cursor: not-allowed;
+}
+
+.msg-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.msg {
+    display: inline;
+    background-color: #384E77;
+    color: white;
+    padding: 1.5rem;
+    font-size: 1.2rem; 
+    border-radius: 20px;
+}
+
+.msg:hover {
+    cursor: pointer;
+}
+
+@keyframes animation1 {
+    0% {
+        transform: translateY(-15px);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(-15px);
+    }
+}
+
+
+@media (max-width: 500px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .choices {
+        gap: 10px;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+    }
+
+    img:hover {
+        height: 105px;
+    }
+
+    .score-card {
+        gap: 30px;
+    }
+
+    #userPoint, #comPoint {
+        font-size: 1.5rem;
+    }
+
+    .points {
+        height: 60px;
+        width: 70px;
+        font-size: small;
+    }
+
+    .msg {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}
