@@ -71,7 +71,7 @@ const showWinner= (userWin, userChoice, comChoice) => {
 
 const displayFinalWinner = () => {
     if (userScore === winningScore) {
-        msg.innerText = `Congrats! You are the final winner!\nFinal Score: You ${userScore} - Computer ${comScore}`;
+        msg.innerText = `Congrats! You are the final winner!\nFinal Score: You ${userScore} - Computer ${comScore}\nClick here to restart the game 👆`;
         msg.style.backgroundColor = "green";
     } else if (comScore === winningScore) {
         msg.innerText = `Bad luck! Computer is the final winner!\nFinal Score: Computer ${comScore} - You ${userScore}\nClick here to restart the game 👆`;
